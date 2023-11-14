@@ -1,0 +1,120 @@
+#HTNL CODE
+*****************************************************************************************************************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="intro">
+      <img src="https://media.licdn.com/dms/image/D5603AQGA3ZmQW1KRbw/profile-displayphoto-shrink_200_200/0/1691824912060?e=1703721600&v=beta&t=TgIy5lkCMSBQQnVI4A3JpfOAN83OrrCsU1bJrePNESc" alt="Your Name">
+      <h1>Pritha Karmakar</h1>
+      <p>Web Developer</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>I'm a B.TECH Student in C.S.E of University odf Engineering & Managment.</p>
+      <p>I'm a passionate web developer and designer with a keen eye for detail.</p>
+      <p>My skills : HTML, CSS, JavaScript, Responsive Design, Java, python, MongoDb, Express.js.</p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <!-- Add more skills here -->
+      </ul>
+    </section>
+
+        <section class="resume">
+          <h2>Resume</h2>
+          <p>Download my CV:</p>
+          <a href="file:///C:/Users/prith/Downloads/Pritha%20Karmakar_12021002001044_Resume.pdf" download="YourName_Resume.pdf">Download</a>
+        </section>
+        
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email: prithak6379@email.com</p>
+      <p>Phone: 6547895567</p>
+      <!-- Add more contact information here -->
+    </section>
+
+<script src="scripts.js"></script>
+  </main>
+
+</body>
+</html>
+*********************************************************************************************************
+#CSS CODE
+*********************************************************************************************************
+/* Basic styles, you can customize further */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #9b2a2a;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .intro img {
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  .intro h1 {
+    margin: 10px 0;
+  }
+  
+  .main {
+    padding: 20px;
+  }
+  
+  section {
+    background-color: rgb(168, 104, 139);
+    margin-bottom: 40px;
+  }
+  
+  section h2 {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .project {
+    border: 1px solid rgb(178, 66, 85);
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+********************************************************************************************************************
+#JS CODE
+*******************************************************************************************************************
+function showDetails(projectId) {
+    const project = document.getElementById(projectId);
+    const details = project.querySelector('.details');
+  
+    if (details.style.display === 'none') {
+      details.style.display = 'block';
+    } else {
+      details.style.display = 'none';
+    }
+  }
+*************************************************************************************************************
